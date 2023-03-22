@@ -1,7 +1,7 @@
 import React from 'react';
-
+import { Ul } from './Statistics.styled';
 const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
-  <ul>
+  <Ul>
     <li>Good: {good}</li>
     <li>Neutral: {neutral}</li>
     <li>Bad: {bad}</li>
@@ -10,7 +10,7 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => (
       Postitive feedback:
       {positivePercentage > 0 ? positivePercentage : 0} %
     </li>
-  </ul>
+  </Ul>
 );
 
 export default Statistics;

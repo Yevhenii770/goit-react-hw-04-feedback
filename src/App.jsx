@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Div } from './App.styled';
 import Statistics from './components/Statistics/Statistics';
 import FeedbackOptions from './components/Feedback';
 import Section from './components/Sections';
@@ -28,7 +29,7 @@ export default function App() {
   };
 
   return (
-    <>
+    <Div>
       <Section title="Please leave feedback">
         <FeedbackOptions
           options={btnNames}
@@ -49,6 +50,6 @@ export default function App() {
           <Notification title="There is no feedback"></Notification>
         )}
       </Section>
-    </>
+    </Div>
   );
 }

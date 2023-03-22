@@ -1,12 +1,13 @@
 import styled from '@emotion/styled';
 
 export const Div = styled.div`
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 20px;
 `;
 
 export const Sections = styled.section`
-  padding-bottom: 30px;
+  :first-child {
+    padding-bottom: 30px;
+  }
 `;
